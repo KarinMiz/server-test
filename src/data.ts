@@ -4,19 +4,14 @@ export const data = [
         "domains": [
             {
                 "domain": "bla1.com",
-                "desktopAds": 2,
-                "mobileAds": 30
+                "desktopAds": 0,
+                "mobileAds": 0
             }
         ]
     },
     {
         "publisher": "publisher 2",
         "domains": [
-            {
-                "domain": "1",
-                "desktopAds": 0,
-                "mobileAds": 0
-            },
             {
                 "domain": "3",
                 "desktopAds": 0,
@@ -26,11 +21,26 @@ export const data = [
                 "domain": "2",
                 "desktopAds": 0,
                 "mobileAds": 5
+            },
+            {
+                "domain": "blabla.com",
+                "desktopAds": 12,
+                "mobileAds": 0
             }
         ]
     },
     {
-        "publisher": "test",
+        "publisher": "Ron",
+        "domains": [
+            {
+                "domain": "hello.com",
+                "desktopAds": 12,
+                "mobileAds": 12
+            }
+        ]
+    },
+    {
+        "publisher": "Eliad",
         "domains": []
     }
 ]
