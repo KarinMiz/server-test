@@ -48,9 +48,9 @@ export const createDomain = (req: Request, res: Response) => {
 export const updateDomain = (req: Request, res: Response) => {
     try {
         console.log(req.body);
-        const { publisher, domain, desktopAds, mobileAds } = req.body;
+        const { domain, desktopAds, mobileAds } = req.body;
         const newDomain = { domain, desktopAds, mobileAds };
-
+        const publisher = req.params.name
         const publisherIndex = data.findIndex((p: any) => p.publisher === publisher);
         const newDomainsList = data[publisherIndex].domains.filter(d => d.domain != domain)
         newDomainsList.push(newDomain);

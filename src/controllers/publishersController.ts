@@ -48,3 +48,24 @@ export const createPublisher = (req: Request, res: Response) => {
         res.status(500).json({ message: 'Internal server error' });
     }
 };
+
+export const deletePublisher = (req: Request, res: Response) => {
+    try {
+        const deletedPublisherName = req.body.name;
+        // const deletedPublisherName = req.params.name
+        const newList = data.filter(p => p.publisher != deletedPublisherName)
+        console.log(newList );
+        
+        fs.writeFile('data.ts', `export const data = ${JSON.stringify(newList, null, 4)}`, (err) => {
+            if (err) {
+                console.error('Error writing data to file:', err);
+                res.status(500).json({ message: 'Internal server error' });
+            } else {
+                console.log('Data updated successfully');
+                res.status(201).json(deletedPublisherName); // Respond with the newly created domain
+            }
+        });
+    } catch (error) {
+        res.status(500).json({ message: 'Internal server error' });
+    }
+};

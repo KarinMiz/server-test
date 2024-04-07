@@ -3,11 +3,6 @@ export const data = [
         "publisher": "Karin",
         "domains": [
             {
-                "domain": "bla.com",
-                "desktopAds": 5,
-                "mobileAds": 3
-            },
-            {
                 "domain": "bla1.com",
                 "desktopAds": 2,
                 "mobileAds": 30
@@ -18,34 +13,24 @@ export const data = [
         "publisher": "publisher 2",
         "domains": [
             {
-                "domain": "gar.com",
+                "domain": "1",
                 "desktopAds": 0,
-                "mobileAds": 4
+                "mobileAds": 0
             },
             {
-                "domain": "gar.com",
-                "desktopAds": 5,
-                "mobileAds": 3
+                "domain": "3",
+                "desktopAds": 0,
+                "mobileAds": 0
+            },
+            {
+                "domain": "2",
+                "desktopAds": 0,
+                "mobileAds": 5
             }
         ]
     },
     {
-        "publisher": "publisher 3",
-        "domains": [
-            {
-                "domain": "garr.com",
-                "desktopAds": 0,
-                "mobileAds": 4
-            },
-            {
-                "domain": "garer.com",
-                "desktopAds": 5,
-                "mobileAds": 3
-            }
-        ]
-    },
-    {
-        "publisher": "Eliad",
+        "publisher": "test",
         "domains": []
     }
 ]
